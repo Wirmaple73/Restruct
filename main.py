@@ -92,9 +92,10 @@ with open(outputFile, "w") as file:
 		sf = StructField(field)
 		offset = sf.get_offset() - previousOffset - previousSize
 
-		file.write(f"\tchar Padding{paddingIndex}[0x{offset:X}];\n")
-		file.write("\t" + sf.get_declaration() + "\n")
+		if offset > 0:
+			file.write(f"\tchar Padding{paddingIndex}[0x{offset:X}];\n")
 
+		file.write("\t" + sf.get_declaration() + "\n")
 		paddingIndex += 1
 
 		previousOffset = sf.get_offset()
