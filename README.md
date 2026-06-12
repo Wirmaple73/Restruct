@@ -8,8 +8,8 @@ A little script designed for folks (mostly reverse engineers) who need to use cu
 [![MIT License](https://img.shields.io/badge/license-MIT-forestgreen)](LICENSE)
 
 ## ⬇ Installation
-Either download this repo or run the following commands in the terminal:
-```
+Ensure Python `3.8` or greater is installed. Now, either download this repo or run the following commands in the terminal:
+```cmd
 git clone https://github.com/Wirmaple73/Restruct.git
 cd Restruct
 ```
@@ -17,7 +17,7 @@ cd Restruct
 ## ▶ Usage
 The following steps assume you have completed the installation guide above.
 
-1. Declare your class or struct like so in a file of your choice (preferably `input.txt` for convenience):
+1. Declare your class or struct of choice in `input.txt`:
 ```cpp
 struct Character
 {
@@ -37,7 +37,7 @@ struct Character
 * Whitespace and indentation don't matter.
 * Less common declarations like `typedef struct { ... }` or `struct __declspec(...)` are not supported. The only supported declarations are `struct Name` and `class Name`.
 
-2. Now if you've been using `input.txt`, just run `run.bat` and an output file will be generated like so:
+2. Now just run `run.bat`. A new file called `Output.txt` will be generated in the same directory like so:
 ```cpp
 struct Character
 {
@@ -56,7 +56,7 @@ struct Character
 3. ???
 4. PROFIT!!1
 
-**Note:** You can configure the input and output files as needed by running `python main.py path/to/input.txt path/to/output.txt`.
+**Note:** You can configure the input and output files as needed by running `python main.py path/to/input.txt path/to/output.txt` instead.
 
 ## 💬 Feedback & Contributions
 Feel free to [report bugs and request new features](https://github.com/Wirmaple73/Restruct/issues). Contributions are very welcome, too. If you think this script is cool, please feel free to spare a star!
