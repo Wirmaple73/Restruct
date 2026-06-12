@@ -1,0 +1,8 @@
+struct Character
+{
+	Vehicle* CurrentVehicle;  // size: 4, offset: 0x64
+	float Health;  			  // size: 4, offset: 0xD0
+	bool CannotTakeDamage;    // size: 1, offset: 0xE8
+	bool CannotDie;  		  // size: 1, offset: 0xEA
+	bool CannotBeShot;  	  // size: 1, offset: 0xEC
+};
