@@ -33,7 +33,7 @@ struct Character
 **Notes:**
 * Mixing decimal and hexadecimal numbers is fine. All numbers are interpreted as decimal, except those beginning with `0x`.
 * You may also use `=` instead of `:` when specifying field properties.
-* After each field declaration, you **always** have to explicitly specify its `size` and `offset` in the comment that follows as shown above.
+* After each field declaration, you **always** have to explicitly specify its `size` and `offset` properties as shown above. You can write the properties in any order.
 * Whitespace and indentation don't matter.
 * Less common declarations like `typedef struct { ... }` or `struct __declspec(...)` are not supported. The only supported declarations are `struct Name` and `class Name`.
 
